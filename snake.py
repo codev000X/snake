@@ -10,16 +10,16 @@ class Snake:
 
     def add(self, seg):
         turtle.colormode(255)
-        colour_list = ["black", "midnight blue", "dark blue", "navy", "dark green", "forest green", "dark red",
-                       "maroon"
-            , "saddle brown", "dark slate gray", "dim gray", "dark olive green", "dark cyan", "dark magenta",
-                       "indigo"]
+        colour_list = ["black", "midnight blue", "dark blue", "navy", "dark green", "forest green", "dark red","maroon",
+                       "saddle brown", "dark slate gray", "dim gray", "dark olive green", "dark cyan", "dark magenta","indigo"]
+
         sq = Turtle("circle")
         sq.shapesize(0.9)
         sq.color(random.choice(colour_list))
         sq.penup()
         sq.goto(seg)
         self.segment.append(sq)
+
     def create_snake(self):
         for seg in start_position:
             self.add(seg)
